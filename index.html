@@ -11,46 +11,40 @@
             padding: 20px;
             background-color: #f4f4f4;
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
+        table {
+            width: 100%;
+            border-collapse: collapse;
             margin: auto;
-            max-width: 1200px; /* Increased for better spacing */
         }
-        .column {
+        th, td {
             background: #fff;
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 20px;
-            width: 30%;
-            box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
-            margin-right: 20px; /* Added margin for separation */
-        }
-        .column:last-child {
-            margin-right: 0; /* Remove margin from last column */
-        }
-        h2 {
             text-align: center;
+            box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        th {
+            font-size: 1.5em;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="column">
-            <h2>7 Days Report</h2>
-            <p>Content for the 7 days report goes here...</p>
-        </div>
-        <div class="column">
-            <h2>3 Month Report</h2>
-            <p>Content for the 1 month report goes here...</p>
-        </div>
-        <div class="column">
-            <h2>Due Report</h2>
-            <p>Content for the due report goes here...</p>
-        </div>
-    </div>
+    <table>
+        <tr>
+            <th>7 Days Report</th>
+            <th>1 Month Report</th>
+            <th>Due Report</th>
+        </tr>
+        <tr>
+            <td>Content for the 7 days report goes here...</td>
+            <td>Content for the 1 month report goes here...</td>
+            <td>Content for the due report goes here...</td>
+        </tr>
+    </table>
 
 </body>
 </html>
+
 
